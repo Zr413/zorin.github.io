@@ -104,3 +104,29 @@ a {
     border-top: 1px solid #ccc;
     padding-top: 20px;
 }
+
+.graphical-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+/* Дополнительное стилевое оформление для улучшений визуального дизайна */
+.profile-img {
+    border-radius: 50%; /* Создаем круглый аватар */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень для эффекта высоты */
+}
+
+.graphical-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #333; /* Цвет графического разделителя */
+    margin: 20px 0; /* Отступы для чистой разомкнутости */
+}
+
+/* Дополнительное оформление для анимаций и интерактивности */
+.menu li a:hover {
+    color: #3498db; /* Изменить цвет при наведении */
+    transition: color 0.3s; /* Плавное изменение цвета */
+}

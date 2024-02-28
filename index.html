@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мое Резюме</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Подключаем внешний файл стилей -->
+    <link rel="stylesheet" href="styles.css">  <!-- Подключаем стили -->
 </head>
 <body class="theme-light">  <!-- Добавляем класс для выбора темы -->
+
 <header>
     <h1>Имя Фамилия</h1>
     <nav>
-        <ul>
+        <ul class="menu">
             <li><a href="#about">Обо мне</a></li>
             <li><a href="#experience">Опыт работы</a></li>
             <li><a href="#education">Образование</a></li>
             <li><a href="#skills">Навыки</a></li>
             <li><a href="#contact">Контакты</a></li>
+            <li class="dropdown"><a href="javascript:void(0);" onclick="toggleMenu()">Меню</a>
+                <ul class="dropdown-content">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Опыт работы</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>
@@ -24,44 +34,45 @@
     <div id="about" class="section">
         <h2>Обо мне</h2>
         <p>Текст о себе и вашей профессиональной деятельности.</p>
-        <img src="avatar.jpg" alt="Аватар">
+        <img src="avatar.jpg" alt="Профессиональный портрет" class="profile-img">
     </div>
+
+    <!-- Добавим графические разделители между секциями -->
+    <div class="graphical-divider"></div>
 
     <div id="experience" class="section">
         <h2>Опыт работы</h2>
-        <ul>
-            <li>Место работы, должность, период</li>
-            <li>Место работы, должность, период</li>
-        </ul>
+        <!-- Здесь могут быть перечислены места работы и должности -->
     </div>
+
+    <div class="graphical-divider"></div>
 
     <div id="education" class="section">
         <h2>Образование</h2>
-        <ul>
-            <li>Учебное заведение, специальность, период</li>
-            <li>Учебное заведение, специальность, период</li>
-        </ul>
+        <!-- Здесь могут быть перечислены учебные заведения и специальности -->
     </div>
+
+    <div class="graphical-divider"></div>
 
     <div id="skills" class="section">
         <h2>Навыки</h2>
-        <ul>
-            <li>Навык 1</li>
-            <li>Навык 2</li>
-            <li>Навык 3</li>
-        </ul>
+        <!-- Здесь могут быть представлены навыки с помощью графиков и диаграмм -->
     </div>
+
+    <div class="graphical-divider"></div>
 
     <div id="contact" class="section">
         <h2>Контакты</h2>
-        <p>Email: example@example.com</p>
-        <p>Телефон: 123-456-7890</p>
+        <!-- Здесь могут быть указаны контактные данные -->
     </div>
 </main>
 
 <footer>
     <p>&copy; 2024 Имя Фамилия</p>
 </footer>
+
+<!-- Подключаем JS для доступа к меню -->
+<script src="script.js"></script>
 
 </body>
 </html>
