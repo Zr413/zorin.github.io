@@ -131,3 +131,132 @@ a {
     transition: color 0.3s; /* Плавное изменение цвета */
 }
 
+/* Стили для навыков и диаграмм */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-level {
+    background-color: #3498db;
+    height: 10px;
+    width: 0;
+    transition: width 1s ease; /* Плавное увеличение ширины */
+}
+
+/* Стили для карусели */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Стили для навигационного меню */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+/* Стили для хедера и футера */
+header {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Общие стили для меню */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Выравниваем меню по центру */
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown {
+    display: none; /* Скрытое выпадающее меню по умолчанию */
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .menu .dropdown {
+        display: inline-block; /* Показываем выпадающее меню на мобильных устройствах */
+    }
+}
